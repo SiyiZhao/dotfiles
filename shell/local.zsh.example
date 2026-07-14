@@ -1,3 +1,8 @@
-# Local zsh settings (machine-specific, not committed)
+# Optional machine-specific zsh settings.
+#
+# Copy this file to ~/.zshrc.local and uncomment or add values that are
+# specific to one machine or should not be committed to the repo.
+#
+# Example:
 # export WORK_EMAIL="you@example.com"
 # export TOKEN_FROM_KEYCHAIN="..."

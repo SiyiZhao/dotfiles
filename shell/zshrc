@@ -1,0 +1,10 @@
+# Shared zsh entrypoint
+
+DOTFILES_ROOT="${DOTFILES_ROOT:-$HOME/dotfiles}"
+
+[[ -f "${DOTFILES_ROOT}/shell/exports.zsh" ]] && source "${DOTFILES_ROOT}/shell/exports.zsh"
+[[ -f "${DOTFILES_ROOT}/shell/path.zsh" ]] && source "${DOTFILES_ROOT}/shell/path.zsh"
+[[ -f "${DOTFILES_ROOT}/shell/aliases.zsh" ]] && source "${DOTFILES_ROOT}/shell/aliases.zsh"
+[[ -f "${DOTFILES_ROOT}/shell/ohmyzsh.zsh" ]] && source "${DOTFILES_ROOT}/shell/ohmyzsh.zsh"
+[[ -f "${DOTFILES_ROOT}/shell/python.zsh" ]] && source "${DOTFILES_ROOT}/shell/python.zsh"
+[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"

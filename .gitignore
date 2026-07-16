@@ -1,0 +1,7 @@
+# Local overrides and secrets
+shell/local.zsh
+git/gitconfig.local
+tmux/tmux.local.conf
+
+# Temporary files
+*.tmp

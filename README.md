@@ -44,3 +44,19 @@ linked `~/.gitconfig` in this setup, which is tracked in dotfiles.
 
 Do not set `core.excludesFile` unless intentionally replacing the linked
 `~/.config/git/ignore`; Git uses that XDG path by default.
+
+## Homebrew
+
+Selected packages are managed in `homebrew/Brewfile`. With Homebrew installed,
+run from the repository root:
+
+```sh
+# Check installed packages without requiring upgrades.
+brew bundle check --file=homebrew/Brewfile --no-upgrade
+
+# Install the selected packages.
+brew bundle install --file=homebrew/Brewfile --no-upgrade
+```
+
+This is a curated list, not a full inventory. Avoid `brew bundle cleanup`, which
+can remove installed packages omitted from the file.
